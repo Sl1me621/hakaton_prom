@@ -21,7 +21,7 @@ def table():
 def mon():
     cellinfo = readApi()
     return  render_template('cell1.html', cellinfo=cellinfo)
-#@app.route("/cell2")
+##@app.route("/cell2")
 #def mon():
  #   cellinfo = readApi()
  #   return  render_template('cell2.html', cellinfo=cellinfo)
