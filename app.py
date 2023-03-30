@@ -2,8 +2,9 @@ from flask import Flask, render_template
 app = Flask(__name__)
 import requests
 from read3cell import readdata, readalldata
+r=readalldata()
 def speed_ln():
-    data=readalldata()
+    data=r
     f = data[5]['params'][0]['value']
     g=f/24
     return g
@@ -117,147 +118,147 @@ def wstatush6():
        wstatush6=wstatus_h6_2()
     return wstatush6
 def wstatus_h1():
-    data=readalldata()
+    data=r
     wtatush=data[0]['wait_h'][1]
     return  wtatush
 def wstatus_h2():
-    data=readalldata()
+    data=r
     wtatush=data[1]['wait_h'][1]
     return  wtatush
 def wstatus_h3():
-    data=readalldata()
+    data=r
     wtatush=data[2]['wait_h'][1]
     return  wtatush
 def wstatus_h4():
-    data=readalldata()
+    data=r
     wtatush=data[3]['wait_h'][1]
     return  wtatush
 def wstatus_h5():
-    data=readalldata()
+    data=r
     wtatush=data[4]['wait_h'][1]
     return  wtatush
 def wstatus_h6():
-    data=readalldata()
+    data=r
     wtatush=data[5]['wait_h'][1]
     return  wtatush
 def wstatus_h1_0():
-    data=readalldata()
+    data=r
     wstatush=data[0]['wait_h'][0]
     return  wstatush
 def wstatus_h2_0():
-    data=readalldata()
+    data=r
     wstatush=data[1]['wait_h'][0]
     return  wstatush
 def wstatus_h3_0():
-    data=readalldata()
+    data=r
     wstatush=data[2]['wait_h'][0]
     return  wstatush
 def wstatus_h4_0():
-    data=readalldata()
+    data=r
     wstatush=data[3]['wait_h'][0]
     return  wstatush
 def wstatus_h5_0():
-    data=readalldata()
+    data=r
     wstatush=data[4]['wait_h'][0]
     return  wstatush
 def wstatus_h6_0():
-    data=readalldata()
+    data=r
     wstatush=data[5]['wait_h'][0]
     return  wstatush
 def wstatus_h1_2():
-    data=readalldata()
+    data=r
     wtatush=data[0]['wait_h'][2]
     return  wtatush
 def wstatus_h2_2():
-    data=readalldata()
+    data=r
     wtatush=data[1]['wait_h'][2]
     return  wtatush
 def wstatus_h3_2():
-    data=readalldata()
+    data=r
     wtatush=data[2]['wait_h'][2]
     return  wtatush
 def wstatus_h4_2():
-    data=readalldata()
+    data=r
     wtatush=data[3]['wait_h'][2]
     return  wtatush
 def wstatus_h5_2():
-    data=readalldata()
+    data=r
     wtatush=data[4]['wait_h'][2]
     return  wtatush
 def wstatus_h6_2():
-    data=readalldata()
+    data=r
     wtatush=data[5]['wait_h'][2]
     return  wtatush
 def wstatus_d1():
-    data=readalldata()
+    data=r
     wstatusd=data[0]['wait_d'][1]
     return  wstatusd
 def wstatus_d2():
-    data=readalldata()
+    data=r
     wstatusd=data[1]['wait_d'][1]
     return  wstatusd
 def wstatus_d3():
-    data=readalldata()
+    data=r
     wstatusd=data[2]['wait_d'][1]
     return  wstatusd
 def wstatus_d4():
-    data=readalldata()
+    data=r
     wstatusd=data[3]['wait_d'][1]
     return  wstatusd
 def wstatus_d5():
-    data=readalldata()
+    data=r
     wstatusd=data[4]['wait_d'][1]
     return  wstatusd
 def wstatus_d6():
-    data=readalldata()
+    data=r
     wstatusd=data[5]['wait_d'][1]
     return  wstatusd
 def wstatus_d1_0():
-    data=readalldata()
+    data=r
     wstatusd=data[0]['wait_d'][0]
     return  wstatusd
 def wstatus_d2_0():
-    data=readalldata()
+    data=r
     wstatusd=data[1]['wait_d'][0]
     return  wstatusd
 def wstatus_d3_0():
-    data=readalldata()
+    data=r
     wstatusd=data[2]['wait_d'][0]
     return  wstatusd
 def wstatus_d4_0():
-    data=readalldata()
+    data=r
     wstatusd=data[3]['wait_d'][0]
     return  wstatusd
 def wstatus_d5_0():
-    data=readalldata()
+    data=r
     wstatusd=data[4]['wait_d'][0]
     return  wstatusd
 def wstatus_d6_0():
-    data=readalldata()
+    data=r
     wstatusd=data[5]['wait_d'][0]
     return  wstatusd
 def wstatus_d1_2():
-    data=readalldata()
+    data=r
     wstatusd=data[0]['wait_d'][2]
     return  wstatusd
 def wstatus_d2_2():
-    data=readalldata()
+    data=r
     wstatusd=data[1]['wait_d'][2]
     return  wstatusd
 def wstatus_d3_2():
-    data=readalldata()
+    data=r
     wstatusd=data[2]['wait_d'][2]
     return  wstatusd
 def wstatus_d4_2():
-    data=readalldata()
+    data=r
     wstatusd=data[3]['wait_d'][2]
     return  wstatusd
 def wstatus_d5_2():
-    data=readalldata()
+    data=r
     wstatusd=data[4]['wait_d'][2]
     return  wstatusd
 def wstatus_d6_2():
-    data=readalldata()
+    data=r
     wstatusd=data[5]['wait_d'][2]
     return  wstatusd
 def wstatush_proch1():
@@ -388,104 +389,104 @@ def statush6():
         statush=status_h6_3()
     return statush
 def status_h1():
-    data=readalldata()
+    data=r
     statush=data[0]['status_h'][1]
     return  statush
 def status_h2():
-    data=readalldata()
+    data=r
     statush=data[1]['status_h'][1]
     return  statush
 
 def status_h3():
-    data=readalldata()
+    data=r
     statush=data[2]['status_h'][1]
     return  statush
 
 def status_h4():
-    data=readalldata()
+    data=r
     statush=data[3]['status_h'][1]
     return  statush
 
 def status_h5():
-    data=readalldata()
+    data=r
     statush=data[4]['status_h'][1]
     return  statush
 
 def status_h6():
-    data=readalldata()
+    data=r
     statush=data[5]['status_h'][1]
     return  statush
 
 def status_h1_0():
-    data=readalldata()
+    data=r
     statush=data[0]['status_h'][0]
     return  statush
 def status_h2_0():
-    data=readalldata()
+    data=r
     statush=data[1]['status_h'][0]
     return  statush
 def status_h3_0():
-    data=readalldata()
+    data=r
     statush=data[2]['status_h'][0]
     return  statush
 def status_h4_0():
-    data=readalldata()
+    data=r
     statush=data[3]['status_h'][0]
     return  statush
 def status_h5_0():
-    data=readalldata()
+    data=r
     statush=data[4]['status_h'][0]
     return  statush
 def status_h6_0():
-    data=readalldata()
+    data=r
     statush=data[5]['status_h'][0]
     return  statush
 def status_h1_2():
-    data=readalldata()
+    data=r
     statush=data[0]['status_h'][2]
     return  statush
 def status_h2_2():
-    data=readalldata()
+    data=r
     statush=data[1]['status_h'][2]
     return  statush
 def status_h3_2():
-    data=readalldata()
+    data=r
     statush=data[2]['status_h'][2]
     return  statush
 def status_h4_2():
-    data=readalldata()
+    data=r
     statush=data[3]['status_h'][2]
     return  statush
 def status_h5_2():
-    data=readalldata()
+    data=r
     statush=data[4]['status_h'][2]
     return  statush
 def status_h6_2():
-    data=readalldata()
+    data=r
     statush=data[5]['status_h'][2]
     return  statush
 def status_h1_3():
-    data=readalldata()
+    data=r
     statush=data[0]['status_h'][3]
     return  statush
 def status_h2_3():
-    data=readalldata()
+    data=r
     statush=data[1]['status_h'][3]
     return  statush
 def status_h3_3():
-    data=readalldata()
+    data=r
     statush=data[2]['status_h'][3]
     return  statush
 def status_h4_3():
-    data=readalldata()
+    data=r
     statush=data[3]['status_h'][3]
     return  statush
 def status_h5_3():
-    data=readalldata()
+    data=r
     statush=data[4]['status_h'][3]
     return  statush
 def status_h6_3():
-    data=readalldata()
+    data=r
     statush=data[5]['status_h'][3]
     return  statush
 def statush_proch1():
@@ -617,248 +618,248 @@ def statusd6():
         statusd=status_d6_3()
     return statusd
 def status_d1():
-    data=readalldata()
+    data=r
     statusd=data[0]['status_d'][1]
     return  statusd
 def status_d2():
-    data=readalldata()
+    data=r
     statusd=data[1]['status_d'][1]
     return  statusd
 def status_d3():
-    data=readalldata()
+    data=r
     statusd=data[2]['status_d'][1]
     return  statusd
 def status_d4():
-    data=readalldata()
+    data=r
     statusd=data[3]['status_d'][1]
     return  statusd
 def status_d5():
-    data=readalldata()
+    data=r
     statusd=data[4]['status_d'][1]
     return  statusd
 def status_d6():
-    data=readalldata()
+    data=r
     statusd=data[5]['status_d'][1]
     return  statusd
 def status_d1_0():
-    data=readalldata()
+    data=r
     statusd=data[0]['status_d'][0]
     return  statusd
 def status_d2_0():
-    data=readalldata()
+    data=r
     statusd=data[1]['status_d'][0]
     return  statusd
 def status_d3_0():
-    data=readalldata()
+    data=r
     statusd=data[2]['status_d'][0]
     return  statusd
 def status_d4_0():
-    data=readalldata()
+    data=r
     statusd=data[3]['status_d'][0]
     return  statusd
 def status_d5_0():
-    data=readalldata()
+    data=r
     statusd=data[4]['status_d'][0]
     return  statusd
 def status_d6_0():
-    data=readalldata()
+    data=r
     statusd=data[5]['status_d'][0]
     return  statusd
 def status_d1_2():
-    data=readalldata()
+    data=r
     statusd=data[0]['status_d'][2]
     return  statusd
 def status_d2_2():
-    data=readalldata()
+    data=r
     statusd=data[1]['status_d'][2]
     return  statusd
 def status_d3_2():
-    data=readalldata()
+    data=r
     statusd=data[2]['status_d'][2]
     return  statusd
 def status_d4_2():
-    data=readalldata()
+    data=r
     statusd=data[3]['status_d'][2]
     return  statusd
 def status_d5_2():
-    data=readalldata()
+    data=r
     statusd=data[4]['status_d'][2]
     return  statusd
 def status_d6_2():
-    data=readalldata()
+    data=r
     statusd=data[5]['status_d'][2]
     return  statusd
 def status_d1_3():
-    data=readalldata()
+    data=r
     statusd=data[0]['status_d'][3]
     return  statusd
 def status_d2_3():
-    data=readalldata()
+    data=r
     statusd=data[1]['status_d'][3]
     return  statusd
 def status_d3_3():
-    data=readalldata()
+    data=r
     statusd=data[2]['status_d'][3]
     return  statusd
 def status_d4_3():
-    data=readalldata()
+    data=r
     statusd=data[3]['status_d'][3]
     return  statusd
 def status_d5_3():
-    data=readalldata()
+    data=r
     statusd=data[4]['status_d'][3]
     return  statusd
 def status_d6_3():
-    data=readalldata()
+    data=r
     statusd=data[5]['status_d'][3]
     return  statusd
 def load_h1():
-    data=readalldata()
+    data=r
     load=data[0]['load_h'][1]
     load=load*100
     return  load
 def load_h2():
-    data=readalldata()
+    data=r
     load=data[1]['load_h'][1]
     load=load*100
     return  load
 def load_h3():
-    data=readalldata()
+    data=r
     load=data[2]['load_h'][1]
     load=load*100
     return  load
 def load_h4():
-    data=readalldata()
+    data=r
     load=data[3]['load_h'][1]
     load=load*100
     return  load
 def load_h5():
-    data=readalldata()
+    data=r
     load=data[4]['load_h'][1]
     load=load*100
     return  load
 def load_h6():
-    data=readalldata()
+    data=r
     load=data[5]['load_h'][1]
     load=load*100
     return  load
 def load_d1():
-    data=readalldata()
+    data=r
     load=data[0]['load_d'][1]
     load=load*100
     return  load
 def load_d2():
-    data=readalldata()
+    data=r
     load=data[1]['load_d'][1]
     load = load * 100
     return  load
 def load_d3():
-    data=readalldata()
+    data=r
     load=data[2]['load_d'][1]
     load = load * 100
     return  load
 def load_d4():
-    data=readalldata()
+    data=r
     load=data[3]['load_d'][1]
     load = load * 100
     return  load
 def load_d5():
-    data=readalldata()
+    data=r
     load=data[4]['load_d'][1]
     load = load * 100
     return  load
 def load_d6():
-    data=readalldata()
+    data=r
     load=data[5]['load_d'][1]
     load = load * 100
     return  load
 def obrabotka1_():
-    data=readalldata()
+    data=r
     obrabot=data[0]['count_d']
     return obrabot
 def obrabotka2_():
-    data=readalldata()
+    data=r
     obrabot=data[1]['count_d']
     return obrabot
 def obrabotka3_():
-    data=readalldata()
+    data=r
     obrabot=data[2]['count_d']
     return obrabot
 def obrabotka4_():
-    data=readalldata()
+    data=r
     obrabot=data[3]['count_d']
     return obrabot
 def obrabotka5_():
-    data=readalldata()
+    data=r
     obrabot=data[4]['count_d']
     return obrabot
 def obrabotka6_():
-    data=readalldata()
+    data=r
     obrabot=data[5]['count_d']
     return obrabot
 def obrabotka1_h():
-    data=readalldata()
+    data=r
     obrabot=data[0]['count_h']
     return obrabot
 def obrabotka2_h():
-    data=readalldata()
+    data=r
     obrabot=data[1]['count_h']
     return obrabot
 def obrabotka3_h():
-    data=readalldata()
+    data=r
     obrabot=data[2]['count_h']
     return obrabot
 def obrabotka4_h():
-    data=readalldata()
+    data=r
     obrabot=data[3]['count_h']
     return obrabot
 def obrabotka5_h():
-    data=readalldata()
+    data=r
     obrabot=data[4]['count_h']
     return obrabot
 def obrabotka6_h():
-    data=readalldata()
+    data=r
     obrabot=data[5]['count_h']
     return obrabot
 def proc_brack():
-    data = readalldata()
+    data = r
     y = data[1]['params'][0]['value']
     h = data[5]['params'][0]['value']
     g=(y/h)*100
     return g
 def brack_():
-    data=readalldata()
+    data=r
     z=data[1]['params'][0]['value']
     return z
 def pusk1_():
-    data=readalldata()
+    data=r
     f=data[0]['params'][0]['value']
     return f
 def pusk2_():
-    data=readalldata()
+    data=r
     f=data[1]['params'][0]['value']
     return f
 def pusk3_():
-    data=readalldata()
+    data=r
     f=data[2]['params'][0]['value']
     return f
 def pusk4_():
-    data=readalldata()
+    data=r
     f=data[3]['params'][0]['value']
     return f
 def pusk5_():
-    data=readalldata()
+    data=r
     f=data[4]['params'][0]['value']
     return f
 def pusk6_():
-    data=readalldata()
+    data=r
     f=data[5]['params'][0]['value']
     return f
 
 
 
 def countcellworcks():
-    data=readalldata()
+    data=r
     countwoks = 0
     for i in range(6):
 
@@ -866,14 +867,14 @@ def countcellworcks():
             countwoks += 1
     return countwoks
 def  weit_countcell():
-    data=readalldata()
+    data=r
     countwoks = 0
     for i in range(6):
         if data[i]['params'][1]['value'] == 2:
             countwoks += 1
     return countwoks
 def weit_status1_1():
-    data=readalldata()
+    data=r
     c=0
     if data[0]['params'][2]['value'] == 0:
          c =0
@@ -883,7 +884,7 @@ def weit_status1_1():
         c = 2
     return c
 def weit_status2_2():
-    data=readalldata()
+    data=r
     c=0
     if data[1]['params'][2]['value'] == 0:
          c = 0
@@ -893,7 +894,7 @@ def weit_status2_2():
         c =2
     return c
 def weit_status3_3():
-    data=readalldata()
+    data=r
     c=0
     if data[2]['params'][2]['value'] == 0:
          c = 0
@@ -903,7 +904,7 @@ def weit_status3_3():
         c = 2
     return c
 def weit_status4_4():
-    data=readalldata()
+    data=r
     c=0
     if data[3]['params'][2]['value'] == 0:
          c = 0
@@ -913,7 +914,7 @@ def weit_status4_4():
         c = 2
     return c
 def weit_status5_5():
-    data=readalldata()
+    data=r
     c=0
     if data[4]['params'][2]['value'] == 0:
          c = 0
@@ -923,7 +924,7 @@ def weit_status5_5():
         c = 2
     return c
 def weit_status6_6():
-    data=readalldata()
+    data=r
     c=0
     if data[5]['params'][2]['value'] == 0:
          c = 0
@@ -933,7 +934,7 @@ def weit_status6_6():
         c = 2
     return c
 def weit_status1():
-    data=readalldata()
+    data=r
     c=0
     if data[0]['params'][2]['value'] == 0:
          c = "Нет ожидания"
@@ -943,7 +944,7 @@ def weit_status1():
         c = "Переполнена/ждет след ячейки"
     return c
 def weit_status2():
-    data=readalldata()
+    data=r
     c=0
     if data[1]['params'][2]['value'] == 0:
          c = "Нет ожидания"
@@ -953,7 +954,7 @@ def weit_status2():
         c = "Переполнена/ждет след ячейки"
     return c
 def weit_status3():
-    data=readalldata()
+    data=r
     c=0
     if data[2]['params'][2]['value'] == 0:
          c = "Нет ожидания"
@@ -963,7 +964,7 @@ def weit_status3():
         c = "Переполнена/ждет след ячейки"
     return c
 def weit_status4():
-    data=readalldata()
+    data=r
     c=0
     if data[3]['params'][2]['value'] == 0:
          c = "Нет ожидания"
@@ -973,7 +974,7 @@ def weit_status4():
         c = "Переполнена/ждет след ячейки"
     return c
 def weit_status5():
-    data=readalldata()
+    data=r
     c=0
     if data[4]['params'][2]['value'] == 0:
          c = "Нет ожидания"
@@ -983,7 +984,7 @@ def weit_status5():
         c = "Переполнена/ждет след ячейки"
     return c
 def weit_status6():
-    data=readalldata()
+    data=r
     c=0
     if data[5]['params'][2]['value'] == 0:
          c = "Нет ожидания"
@@ -993,7 +994,7 @@ def weit_status6():
         c = "Переполнена/ждет след ячейки"
     return c
 def currentwork1():
-    data=readalldata()
+    data=r
     c=0
     if data[0]['params'][1]['value'] == 0:
          c = "выключена"
@@ -1005,7 +1006,7 @@ def currentwork1():
          c = "ошибка"
     return c
 def currentwork2():
-    data=readalldata()
+    data=r
     c=0
     if data[1]['params'][1]['value'] == 0:
          c = "выключена"
@@ -1017,7 +1018,7 @@ def currentwork2():
          c = "ошибка"
     return c
 def currentwork3():
-    data=readalldata()
+    data=r
     c=0
     if data[2]['params'][1]['value'] == 0:
          c = "выключена"
@@ -1029,7 +1030,7 @@ def currentwork3():
          c = "ошибка"
     return c
 def currentwork4():
-    data=readalldata()
+    data=r
     c=0
     if data[3]['params'][1]['value'] == 0:
          c = "выключена"
@@ -1041,7 +1042,7 @@ def currentwork4():
          c = "ошибка"
     return c
 def currentwork5():
-    data=readalldata()
+    data=r
     c=0
     if data[4]['params'][1]['value'] == 0:
          c = "выключена"
@@ -1053,7 +1054,7 @@ def currentwork5():
          c = "ошибка"
     return c
 def currentwork6():
-    data=readalldata()
+    data=r
     c=0
     if data[5]['params'][1]['value'] == 0:
          c = "выключена"
@@ -1065,7 +1066,7 @@ def currentwork6():
          c = "ошибка"
     return c
 def currentwork1_1():
-    data=readalldata()
+    data=r
     c=0
     if data[0]['params'][1]['value'] == 0:
          c = 0
@@ -1077,7 +1078,7 @@ def currentwork1_1():
          c = 3
     return c
 def currentwork2_2():
-    data=readalldata()
+    data=r
     c=0
     if data[1]['params'][1]['value'] == 0:
          c =0
@@ -1089,7 +1090,7 @@ def currentwork2_2():
          c = 3
     return c
 def currentwork3_3():
-    data=readalldata()
+    data=r
     c=0
     if data[2]['params'][1]['value'] == 0:
          c = 0
@@ -1101,7 +1102,7 @@ def currentwork3_3():
          c = 3
     return c
 def currentwork4_4():
-    data=readalldata()
+    data=r
     c=0
     if data[3]['params'][1]['value'] == 0:
          c = 0
@@ -1113,7 +1114,7 @@ def currentwork4_4():
          c = 3
     return c
 def currentwork5_5():
-    data=readalldata()
+    data=r
     c=0
     if data[4]['params'][1]['value'] == 0:
          c = 0
@@ -1125,7 +1126,7 @@ def currentwork5_5():
          c = 3
     return c
 def currentwork6_6():
-    data=readalldata()
+    data=r
     c=0
     if data[5]['params'][1]['value'] == 0:
          c = 0
@@ -1137,14 +1138,14 @@ def currentwork6_6():
          c = 3
     return c
 def  error_countcell():
-    data=readalldata()
+    data=r
     countwoks = 0
     for i in range(6):
         if data[i]['params'][0]['value'] == 3:
             countwoks += 1
     return countwoks
 def unworcks_cell():
-    data=readalldata()
+    data=r
     countwoks = 0
     for i in range(6):
 
