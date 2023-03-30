@@ -87,9 +87,10 @@
                     </div>
                     <div class="ps-3">
                       <h6>{{currentcount}}</h6>
-                      <h6>{{pusk}}</h6>
-                      <span class="text-success small pt-1 fw-bold">Today:12%</span> <span class="text-muted small pt-2 ps-1"></span>
-                       <span class="text-success small pt-1 fw-bold">Last hour:12%</span> <span class="text-muted small pt-2 ps-1"></span>
+                      <h6>{{load_d}}%</h6>
+                      <h6>{{load_h}}%</h6>
+                      <span class="text-success small pt-1 fw-bold">{{obraot5}}</span> <span class="text-muted small pt-2 ps-1"></span>
+                       <span class="text-success small pt-1 fw-bold">{{obrabotkah5}}</span> <span class="text-muted small pt-2 ps-1"></span>
 
                     </div>
                   </div>
@@ -251,18 +252,19 @@
                   <tr>
                     <th scope="col">Status</th>
                     <th scope="col">Time in this status(today)</th>
-                    <th scope="col">%Time in this status(today)</th>
                     <th scope="col">Time in this status(last hour)</th>
+                    <th scope="col">%Time in this status(today)</th>
                     <th scope="col">%Time in this status(last hour)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">{{currentcount}}</th>
-                    <td> -<td>
-                    <td>-</td>
-                    <td> -</td>
-                    <td>-</td>
+                    <td> {{statusd}}</td>
+                     <td>{{statush}}</td>
+                    <td>{{statusproc}}%</td>
+                    <td> {{statusproch}}%</td>
+
                   </tr>
 
                 </tbody>
@@ -290,10 +292,10 @@
                 <tbody>
                   <tr>
                     <th scope="row">{{weitstatus}}</th>
-                    <td>- </td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                      <td>{{wtatusd}}</td>
+                    <td>{{wstatusdproc}}%</td>
+                    <td>{{wtstushd}}</td>
+                    <td>{{wstatushproch}}%</td>
                   </tr>
 
                 </tbody>

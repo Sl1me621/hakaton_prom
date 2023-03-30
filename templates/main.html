@@ -168,8 +168,8 @@
                     <i class=""></i>
                     </div>
                     <div class="ps-3">
-                      <h6>1244</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+                      <h6>{{speed}}</h6>
+                      <span class="text-danger small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
 
                     </div>
                   </div>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="ps-3">
                       <h6>{{brack}}</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+                      <span class="text-danger small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
 
                     </div>
                   </div>
@@ -237,7 +237,7 @@
                     </div>
                     <div class="ps-3">
                       <h6>{{proc_brac}}%</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+                      <span class="text-danger small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
 
                     </div>
                   </div>
@@ -259,8 +259,8 @@
                       <i class=""></i>
                     </div>
                     <div class="ps-3">
-                      <h6>1244</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+                      <h6>{{loadh}}</h6>
+                      <span class="text-danger small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
 
                     </div>
                   </div>
@@ -349,7 +349,7 @@
                         <th scope="col">Weit status</th>
                         <th scope="col">Обработано(за час)</th>
                          <th scope="col">Обработано(за день)</th>
-                         <th scope="col">Загрузка(за час)</th>
+                         <th scope="col">Загрузка(за день)</th>
                          <th scope="col">Загрузка(за час)</th>
                         <th scope="col">Status</th>
                       </tr>
@@ -359,30 +359,30 @@
                         <th scope="row"><a href="#">#1</a></th>
                         <td>Cell1</td>
                         <td>{{weitstatus1}}<a href="#" class="text-primary"></a></td>
-                        <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
+                        <td>{{obrabotkah1}}</td>
+                          <td>{{obraot1}}</td>
+                          <td>{{loadd1}}%</td>
+                          <td>{{loadh1}}%</td>
                         <td><span class="badge bg-success">{{currentcount1}}</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2</a></th>
                         <td>Cell2</td>
                         <td>{{weitstatus2}}<a href="#" class="text-primary"></a></td>
-                        <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
+                        <td>{{obrabotkah2}}</td>
+                          <td>{{obraot2}}</td>
+                         <td>{{loadd2}}%</td>
+                          <td>{{loadh2}}%</td>
                         <td><span class="badge bg-warning">{{currentcount2}}</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#3</a></th>
                         <td>Cell3</td>
                         <td>{{weitstatus3}}<a href="#" class="text-primary"></a></td>
-                        <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
+                        <td>{{obrabotkah3}}</td>
+                          <td>{{obraot3}}</td>
+                         <td>{{loadd3}}%</td>
+                          <td>{{loadh3}}%</td>
 
                         <td><span class="badge bg-success">{{currentcount3}}</span></td>
                       </tr>
@@ -391,10 +391,10 @@
                         <th scope="row"><a href="#">#4</a></th>
                         <td>Cell4</td>
                         <td>{{weitstatus4}}<a href="#" class="text-primary"></a></td>
-                        <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
+                        <td>{{obrabotkah4}}</td>
+                          <td>{{obraot4}}</td>
+                          <td>{{loadd4}}%</td>
+                          <td>{{loadh4}}%</td>
                         <td><span class="badge bg-success">{{currentcount4}}</span></td>
                       </tr>
                       <tr>
@@ -402,20 +402,20 @@
                         <th scope="row"><a href="#">#5</a></th>
                         <td>Cell5</td>
                         <td>{{weitstatus5}}<a href="#" class="text-primar"></a></td>
-                        <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
+                        <td>{{obrabotkah5}}</td>
+                          <td>{{obraot5}}</td>
+                         <td>{{loadd5}}%</td>
+                          <td>{{loadh5}}%</td>
                         <td><span class="badge bg-danger">{{currentcount5}}</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#6</a></th>
                         <td> Cell6</td>
                         <td>{{weitstatus6}}<a href="#" class="text-primary">  </a></td>
-                        <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
+                        <td>{{obrabotkah6}}</td>
+                          <td>{{obraot6}}</td>
+                         <td>{{loadd6}}%</td>
+                          <td>{{loadh6}}%</td>
                         <td><span class="badge bg-success">{{currentcount6}}</span></td>
                       </tr>
                     </tbody>
@@ -426,5 +426,4 @@
               </div>
             </div><!-- End Recent Sales -->
 </div>
-{{data}}
 {% endblock %}
